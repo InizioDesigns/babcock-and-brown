@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'next/link';
-import Image from 'next/image'
 import { useRouter } from 'next/router'
 import LanguageSwitcher from '../components/language-switcher'
 
@@ -29,7 +28,7 @@ const navContent = {
 const Logo = React.forwardRef(({ onClick, href }, ref) => {
     return (
       <a href={href} onClick={onClick} ref={ref} id="babcocklogo" style={{maxWidth: '90%'}}>
-        <Image 
+        <img 
             src="/lib/img/babcock-brown-55.webp" 
             alt="Babcock and Brown logo" 
             height={55} 
